@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.lbntitulo = new System.Windows.Forms.Label();
-            this.lbnmensaje = new System.Windows.Forms.Label();
             this.PictureLogo = new System.Windows.Forms.PictureBox();
             this.Temporizador = new System.Windows.Forms.Timer(this.components);
             this.Showing = new System.Windows.Forms.Timer(this.components);
             this.Closing = new System.Windows.Forms.Timer(this.components);
             this.btnclose = new System.Windows.Forms.Button();
+            this.txtBody = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.PictureLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,17 +49,6 @@
             this.lbntitulo.Size = new System.Drawing.Size(49, 21);
             this.lbntitulo.TabIndex = 0;
             this.lbntitulo.Text = "Titulo";
-            // 
-            // lbnmensaje
-            // 
-            this.lbnmensaje.AutoSize = true;
-            this.lbnmensaje.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbnmensaje.ForeColor = System.Drawing.Color.White;
-            this.lbnmensaje.Location = new System.Drawing.Point(79, 40);
-            this.lbnmensaje.Name = "lbnmensaje";
-            this.lbnmensaje.Size = new System.Drawing.Size(158, 17);
-            this.lbnmensaje.TabIndex = 2;
-            this.lbnmensaje.Text = "Este es el Primer Mensaje";
             // 
             // PictureLogo
             // 
@@ -100,20 +89,37 @@
             this.btnclose.UseVisualStyleBackColor = true;
             this.btnclose.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txtBody
+            // 
+            this.txtBody.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(132)))), ((int)(((byte)(132)))));
+            this.txtBody.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBody.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtBody.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBody.ForeColor = System.Drawing.Color.White;
+            this.txtBody.Location = new System.Drawing.Point(82, 33);
+            this.txtBody.Multiline = true;
+            this.txtBody.Name = "txtBody";
+            this.txtBody.ReadOnly = true;
+            this.txtBody.Size = new System.Drawing.Size(317, 46);
+            this.txtBody.TabIndex = 11;
+            this.txtBody.Text = "Mi Primer Mensaje";
+            // 
             // Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(132)))), ((int)(((byte)(132)))));
             this.ClientSize = new System.Drawing.Size(411, 94);
+            this.Controls.Add(this.txtBody);
             this.Controls.Add(this.btnclose);
-            this.Controls.Add(this.lbnmensaje);
             this.Controls.Add(this.PictureLogo);
             this.Controls.Add(this.lbntitulo);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Window";
             this.Opacity = 0D;
             this.Text = "Window";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.Window_Load);
             this.MouseLeave += new System.EventHandler(this.Window_MouseLeave);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Window_MouseMove);
@@ -127,10 +133,10 @@
 
         private System.Windows.Forms.Label lbntitulo;
         private System.Windows.Forms.PictureBox PictureLogo;
-        private System.Windows.Forms.Label lbnmensaje;
         private System.Windows.Forms.Timer Temporizador;
         private System.Windows.Forms.Timer Showing;
         private System.Windows.Forms.Timer Closing;
         private System.Windows.Forms.Button btnclose;
+        private System.Windows.Forms.TextBox txtBody;
     }
 }

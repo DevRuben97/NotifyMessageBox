@@ -23,7 +23,7 @@ namespace PopUpMessageBox
         {
             InitializeComponent();
         }
-        public Window(string Titulo, string Mensaje, AlertType type)
+        public Window(string Titulo, string Mensaje, AlertType type)//Inicializar las variables.
         {
             InitializeComponent();
             this.Titulo = Titulo;
@@ -39,28 +39,33 @@ namespace PopUpMessageBox
             {
                 case AlertType.Sucess:
                     this.BackColor = Color.FromArgb(44, 139, 89);
+                    txtBody.BackColor= Color.FromArgb(44, 139, 89);
                     PictureLogo.Image = Properties.Resources.Sucesswhite;
                     break;
                 case AlertType.Error:
                     this.BackColor = Color.FromArgb(181, 41, 42);
+                    txtBody.BackColor= Color.FromArgb(181, 41, 42);
                     PictureLogo.Image = Properties.Resources.cancelWhite;
                     break;
                 case AlertType.Warning:
                     this.BackColor = Color.FromArgb(255, 131, 5);
+                    txtBody.BackColor= Color.FromArgb(255, 131, 5);
                     PictureLogo.Image = Properties.Resources.WarnigWhite;
                     break;
                 case AlertType.Message:
                     this.BackColor = Color.FromArgb(132, 132, 132);
+                    txtBody.BackColor= Color.FromArgb(132, 132, 132);
                     PictureLogo.Image = Properties.Resources.WarnigWhite;
                     break;
                 default:
                     this.BackColor = Color.FromArgb(44, 139, 89);
+                    txtBody.BackColor = Color.FromArgb(44, 139, 89);
                     PictureLogo.Image = Properties.Resources.Sucesswhite;
                     break;
 
             }
             lbntitulo.Text = this.Titulo;
-            lbnmensaje.Text = this.Mensaje;
+            txtBody.Text = this.Mensaje;
             
         }
         private void CloseAnimation()
