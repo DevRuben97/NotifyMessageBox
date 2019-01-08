@@ -39,8 +39,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Numsegundos = new System.Windows.Forms.NumericUpDown();
             this.CheckTime = new System.Windows.Forms.CheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupDuration.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Numsegundos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -160,11 +162,20 @@
             this.CheckTime.UseVisualStyleBackColor = true;
             this.CheckTime.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(747, 51);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(106, 71);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(879, 191);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.CheckTime);
             this.Controls.Add(this.groupDuration);
             this.Controls.Add(this.label3);
@@ -176,9 +187,11 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupDuration.ResumeLayout(false);
             this.groupDuration.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Numsegundos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,6 +210,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown Numsegundos;
         private System.Windows.Forms.CheckBox CheckTime;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

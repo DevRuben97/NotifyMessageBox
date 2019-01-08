@@ -67,5 +67,10 @@ namespace TestWindow
                 groupDuration.Visible = false;
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.LoadingImage;
+        }
     }
 }
