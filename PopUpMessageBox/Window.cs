@@ -10,10 +10,15 @@ using System.Windows.Forms;
 
 namespace PopUpMessageBox
 {
+    /// <summary>
+    /// Created by: Ruben Alexander Batista Santos
+    /// Organization: XbitDev
+    /// Email: alexbatista158@hotmail.com
+    /// </summary>
     public partial class Window : Form
     {
-        public string Titulo { get; set; }
-        public string Mensaje { get; set; }
+        public string Title { get; set; }
+        public string Message { get; set; }
         public enum AlertType { Sucess, Warning, Error, Message};
         public int Duration { get; set; }
         private int ScreenTop;
@@ -26,8 +31,8 @@ namespace PopUpMessageBox
         public Window(string Titulo, string Mensaje, AlertType type)//Inicializar las variables.
         {
             InitializeComponent();
-            this.Titulo = Titulo;
-            this.Mensaje = Mensaje;
+            this.Title = Titulo;
+            this.Message = Mensaje;
             this.ScreenTop= Screen.PrimaryScreen.Bounds.Height - this.Height - 50;
             this.ScreenLeft= this.Left = Screen.PrimaryScreen.Bounds.Width - this.Width - 10;
             this.Duration = 5;
@@ -64,8 +69,9 @@ namespace PopUpMessageBox
                     break;
 
             }
-            lbntitulo.Text = this.Titulo;
-            txtBody.Text = this.Mensaje;
+            lbntitulo.Text = this.Title;
+            txtBody.Text = this.Message;
+            ShowInTaskbar = false;
             
         }
         private void CloseAnimation()

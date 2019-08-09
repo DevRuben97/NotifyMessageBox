@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <projectUrl>https://github.com/DevRuben97/NotifyMessageBox</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Adding Assambly information</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>Push MessageBox Windows</tags>
+  </metadata>
+</package>
